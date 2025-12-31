@@ -15,6 +15,19 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    behaviors {
+        hm: hm {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HM";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <130>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
