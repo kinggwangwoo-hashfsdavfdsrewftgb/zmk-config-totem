@@ -10,17 +10,18 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            flavor = "balanced"; // 추천: tap-preferred보다 balanced가 홈로우 모드에 더 안정적임
+            flavor = "balanced";           // 추천: 오타가 적은 밸런스 모드
             tapping-term-ms = <200>;
-            quick-tap-ms = <175>;    // 추천: 연타 인식 시간 살짝 늘림
-            require-prior-idle-ms = <150>; // 추천: 빠른 타이핑 시 오타 방지 핵심 기능
+            quick-tap-ms = <175>;          // 연타 반응성 향상
+            require-prior-idle-ms = <150>; // 빠른 타이핑 시 오작동 방지
         };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        base {
+        /* Layer 0: Base */
+        default_layer {
             bindings = <
                 &kp Q         &kp W       &kp E       &kp R       &kp T         &kp Y         &kp U          &kp I        &kp O            &kp P
                 &hm LCTRL A   &hm LALT S  &hm LGUI D  &hm LS(F) F &kp G         &kp H         &hm RSHIFT J   &hm RGUI K   &hm RIGHT_ALT L  &hm RCTRL SEMICOLON
@@ -29,6 +30,7 @@
             >;
         };
 
+        /* Layer 1: Media */
         Media {
             bindings = <
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
@@ -38,7 +40,8 @@
             >;
         };
 
-        nav_num {
+        /* Layer 2: Nav */
+        nav_layer {
             bindings = <
                         &kp LA(BACKSPACE)   &kp BACKSPACE     &kp UP       &kp DELETE        &kp LA(DELETE)         &kp N5      &kp N6           &kp N7         &kp N8    &kp N9
                         &kp LA(LEFT_ARROW)  &kp LEFT          &kp DOWN     &kp RIGHT         &kp LA(RIGHT)          &kp N0      &kp N1           &kp N2         &kp N3    &kp N4
@@ -47,6 +50,7 @@
             >;
         };
 
+        /* Layer 3: Mouse */
         Mouse {
             bindings = <
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
@@ -56,7 +60,8 @@
             >;
         };
 
-        sym_func {
+        /* Layer 4: Sym */
+        sym_layer {
             bindings = <
                 &kp ESC        &kp LEFT_BRACE        &kp RIGHT_BRACE        &none             &none              &kp F1  &kp F2           &kp F3   &kp F4   &kp F5
                 &kp TAB        &kp LBKT              &kp RBKT               &kp ENTER         &kp BSLH           &kp F6  &kp F7           &kp F8   &kp F9   &kp F10
@@ -65,6 +70,7 @@
             >;
         };
 
+        /* Layer 5: Number */
         Number {
             bindings = <
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
@@ -74,7 +80,8 @@
             >;
         };
 
-        Additional {
+        /* Layer 6: Extra */
+        Extra {
             bindings = <
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
@@ -83,7 +90,8 @@
             >;
         };
 
-        device {
+        /* Layer 7: Device (Bluetooth) */
+        device_layer {
             bindings = <
                 &none       &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none             &none     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
                 &kp K_MUTE  &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &kp C_PLAY_PAUSE  &none     &none         &none         &none         &none         &none
@@ -93,12 +101,14 @@
         };
     };
 
+    /* Conditional Layers (Tri-Layer) */
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
-        device {
-            if-layers = <7 4>;
-            then-layer = <1>;
+        // Nav(2) + Sym(4)를 동시에 누르면 Device(7) 레이어가 활성화됨
+        tri_layer {
+            if-layers = <2 4>;
+            then-layer = <7>;
         };
     };
 };
