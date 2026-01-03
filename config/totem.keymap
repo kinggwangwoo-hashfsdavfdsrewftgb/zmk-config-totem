@@ -191,14 +191,14 @@
 
         undo {
             bindings = <&kp LG(Z)>;
-            key-positions = <21 22>;
+            key-positions = <10 11>;
             timeout-ms = <100>;
             require-prior-idle-ms = <50>;
         };
 
         redo {
             bindings = <&kp LG(LS(Z))>;
-            key-positions = <21 22 23>;
+            key-positions = <10 11 12>;
             timeout-ms = <100>;
             require-prior-idle-ms = <50>;
         };
