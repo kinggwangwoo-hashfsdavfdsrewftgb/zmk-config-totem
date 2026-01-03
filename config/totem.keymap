@@ -69,18 +69,12 @@
         /* Layer 4: Sym (Already Configured) */
 
         sym_layer {
-bindings = <
-        /* * Left: Num Pad Mirrored (Shifted Right -> Inner Column Used)
-         * Top:  ] [ ( * &  (Original 7,8,9 moved to Inner,Index,Middle)
-         * Home: _ \ ^ % $  (Original 4,5,6 moved to Inner,Index,Middle)
-         * Btm:  ) # @ !    (0,3,2,1 on Pinky->Index)
-         */
-
-        &kp RBKT       &kp LBKT       &kp LPAR       &kp STAR       &kp AMPS         &hm LG(LA(N5)) LG(LC(N5)) &hm LG(LA(N4)) LG(LC(N4)) &kp LG(LA(I))   &hm LG(LA(N2)) LG(LC(N2)) &hm LG(LA(N1)) LG(LC(N1))
-        &kp UNDER      &kp BSLH       &kp CARET      &kp PRCNT      &kp DLLR         &hm LG(LA(N6)) LG(LC(N6)) &kp LG(LA(J))             &kp LG(LA(K))   &kp LG(LA(L))             &hm LG(LA(N3)) LG(LC(N3))
-        &kp RPAR       &kp HASH       &kp AT         &kp EXCL                        &hm LG(LA(N7)) LG(LC(N7)) &trans                    &trans          &trans
-                                      &trans         &trans         &trans           &trans                    &trans                    &trans
-    >;
+            bindings = <
+        &hm RBKT RIGHT_BRACKET      &hm LEFT_PARENTHESIS RIGHT_PARENTHESIS  &kp ASTERISK  &kp AMPERSAND    &kp LG(E)    &hm LG(LA(N5)) LG(LC(N5))  &hm LG(LA(N4)) LG(LC(N4))  &kp LG(LA(I))  &hm LG(LA(N2)) LG(LC(N2))  &hm LG(LA(N1)) LG(LC(N1))
+        &hm LEFT_BRACE RIGHT_BRACE  &kp LCTRL                               &kp PERCENT   &kp DOLLAR       &trans       &hm LG(LA(N6)) LG(LC(N6))  &kp LG(LA(J))              &kp LG(LA(K))  &kp LG(LA(L))              &hm LG(LA(N3)) LG(LC(N3))
+&trans  &trans                      &kp HASH                                &kp AT_SIGN   &kp EXCLAMATION  &trans       &trans                     &trans                     &trans         &trans                     &trans                     &trans
+                                                                            &trans        &trans
+            >;
         };
 
         /* Number Layer (Placeholder) */
