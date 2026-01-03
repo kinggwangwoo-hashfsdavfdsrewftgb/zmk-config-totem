@@ -69,12 +69,14 @@
         /* Sym Layer */
 
         sym_func {
-            bindings = <
-       &kp ESC  &kp LBRC  &kp RBRC  &none    &none        &kp F1   &kp F2     &kp F3   &kp F4   &kp F5
-       &kp TAB  &kp LBKT  &kp RBKT  &kp RET  &kp BSLH     &kp F6   &kp F7     &kp F8   &kp F9   &kp F10
-&none  &kp LT   &kp LPAR  &kp RPAR  &kp GT   &kp UNDER    &kp F11  &kp F12    &kp F13  &kp F14  &kp F15  &kp F16
-                          &trans    &trans   &trans       &none    &kp RSHFT  &none
-            >;
+/* Sym_Funct Layer */
+bindings = <
+    
+    &kp EXCL   &kp AT     &kp UNDER  &kp PLUS   &kp TILDE      &kp MO_A(N5)  &kp MO_A(N4)  &kp MO_A(I)   &kp MO_A(N2)  &kp MO_A(N1)
+    &kp PRCNT  &kp EQUAL  &kp STAR   &kp HASH   &kp GRAVE      &kp MO_A(N6)  &kp MO_A(J)   &kp MO_A(K)   &kp MO_A(L)   &kp MO_C(N1)
+ &lt 8 TAB   &kp CARET  &kp AMPS   &kp DLLR   &kp BSLH   &kp PIPE       &kp MO_C(N6)  &kp MO_C(N5)  &kp MO_C(N4)  &kp MO_C(N3)  &kp MO_C(N2) &lt 8 LSHFT
+                          &trans     &trans     &trans         &kp MO_C(N7)  &trans        &trans
+>;
         };
 
         /* Number Layer (Placeholder) */
