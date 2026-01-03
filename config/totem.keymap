@@ -39,7 +39,7 @@
 
         find {
             bindings = <&kp K_FIND>;
-            key-positions = <13 14>;
+            key-positions = <14 12>;
         };
 
         left_half {
@@ -60,6 +60,46 @@
         rightq {
             bindings = <&kp LA(LC(X))>;
             key-positions = <17 18 19>;
+        };
+
+        Full {
+            bindings = <&kp LA(LC(RET))>;
+            key-positions = <17 18 19 16>;
+        };
+
+        increase {
+            bindings = <&kp LA(LC(PLUS))>;
+            key-positions = <6 7>;
+        };
+
+        decrease {
+            bindings = <&kp LA(LC(MINUS))>;
+            key-positions = <7 8>;
+        };
+
+        magnify {
+            bindings = <&kp LG(PLUS)>;
+            key-positions = <2 3>;
+        };
+
+        micro {
+            bindings = <&kp LG(MINUS)>;
+            key-positions = <2 1>;
+        };
+
+        mdnolinepaste {
+            bindings = <&kp LG(LS(M))>;
+            key-positions = <23 24 22>;
+        };
+
+        raycast {
+            bindings = <&kp LG(SPACE)>;
+            key-positions = <20 13>;
+        };
+
+        finder {
+            bindings = <&kp LA(LG(SPACE))>;
+            key-positions = <20 12 13>;
         };
     };
 
