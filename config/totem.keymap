@@ -36,6 +36,11 @@
             bindings = <&kp K_PASTE>;
             key-positions = <23 24>;
         };
+
+        find {
+            bindings = <&kp K_FIND>;
+            key-positions = <13 14>;
+        };
     };
 
     keymap {
