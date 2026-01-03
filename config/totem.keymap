@@ -116,6 +116,26 @@
             bindings = <&kp LG(P)>;
             key-positions = <9 31>;
         };
+
+        lq {
+            bindings = <&kp LA(LC(Z))>;
+            key-positions = <20 21 13>;
+        };
+
+        rug {
+            bindings = <&kp LA(LC(X))>;
+            key-positions = <20 22 13>;
+        };
+
+        lefthalf {
+            bindings = <&kp LA(LC(LEFT))>;
+            key-positions = <20 13 1>;
+        };
+
+        rhalf {
+            bindings = <&kp LA(LC(RIGHT))>;
+            key-positions = <20 13 2>;
+        };
     };
 
     keymap {
