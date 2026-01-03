@@ -26,21 +26,18 @@
             bindings = <&kp K_CUT>;
             key-positions = <22 21 20>;
             timeout-ms = <100>;
-            require-prior-idle-ms = <50>;
         };
 
         coppy {
             bindings = <&kp K_COPY>;
             key-positions = <23 22>;
             timeout-ms = <100>;
-            require-prior-idle-ms = <50>;
         };
 
         paste {
             bindings = <&kp K_PASTE>;
             key-positions = <23 24>;
             timeout-ms = <100>;
-            require-prior-idle-ms = <50>;
         };
 
         find {
