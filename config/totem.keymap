@@ -34,10 +34,10 @@
         /* Media Layer */
         Media {
             bindings = <
-       &none        &none        &none        &none         &none           &none         &none         &none        &none        &none
-       &kp LGUI     &kp LALT     &kp LCTRL    &kp LSHFT     &none           &none         &kp C_PREV    &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT
-&none  &none        &none        &none        &none         &none           &none         &kp C_STOP    &kp C_PLAY   &kp C_MUTE   &none           &none
-                                 &trans       &trans        &trans          &kp C_STOP    &kp C_PLAY    &kp C_MUTE
+       &none        &none        &none        &none        &none            &none        &kp C_BRI_DEC &kp C_BRI_INC &none        &none
+       &kp LGUI     &kp LALT     &kp LCTRL    &kp LSHFT    &none            &kp C_PREV   &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT   &none
+&none  &none        &none        &none        &none        &none            &none        &kp C_STOP    &kp C_PLAY    &kp C_MUTE   &none        &none
+                                     &trans       &trans       &trans           &kp C_STOP   &kp C_PLAY    &kp C_MUTE
             >;
         };
 
