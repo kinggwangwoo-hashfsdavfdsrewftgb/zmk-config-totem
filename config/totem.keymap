@@ -106,6 +106,16 @@
             bindings = <&kp LG(A)>;
             key-positions = <10 11>;
         };
+
+        lasttab {
+            bindings = <&kp LG(LS(T))>;
+            key-positions = <4 20 12>;
+        };
+
+        print {
+            bindings = <&kp LG(P)>;
+            key-positions = <9 31>;
+        };
     };
 
     keymap {
