@@ -67,7 +67,7 @@
         };
 
         /* Layer 4: Sym (Already Configured) */
-
+        sym_layer {
 bindings = <
         /* * Left: Num Pad Mirrored (* 9 8 7 + 대응)
          * Right: Hold = Cmd+Opt(Group A) / Tap = Cmd+Ctrl(Group C) 
