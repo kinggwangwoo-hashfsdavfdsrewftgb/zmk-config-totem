@@ -41,6 +41,26 @@
             bindings = <&kp K_FIND>;
             key-positions = <13 14>;
         };
+
+        left_half {
+            bindings = <&kp LA(LC(LEFT))>;
+            key-positions = <16 17>;
+        };
+
+        righthalf {
+            bindings = <&kp LA(LC(RIGHT))>;
+            key-positions = <17 18>;
+        };
+
+        leftquarter {
+            bindings = <&kp LA(LC(Z))>;
+            key-positions = <16 17 18>;
+        };
+
+        rightq {
+            bindings = <&kp LA(LC(X))>;
+            key-positions = <17 18 19>;
+        };
     };
 
     keymap {
