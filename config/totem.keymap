@@ -70,10 +70,10 @@
 
         sym_layer {
             bindings = <
-           &kp ESC        &kp LEFT_BRACE        &kp RIGHT_BRACE        &none             &none             &kp F1   &kp F2           &kp F3   &kp F4   &kp F5
-           &kp TAB        &kp LBKT              &kp RBKT               &kp ENTER         &kp BSLH          &kp F6   &kp F7           &kp F8   &kp F9   &kp F10
-&kp GRAVE  &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN  &kp UNDERSCORE    &kp F11  &kp F12          &kp F13  &kp F14  &kp F15  &kp F16
-                                                &trans                 &trans            &trans            &none    &kp RIGHT_SHIFT  &none
+        &kp EXCL       &kp AT         &kp UNDER      &kp PLUS       &kp TILDE          &kp LG(LA(N5)) &kp LG(LA(N4)) &kp LG(LA(I))  &kp LG(LA(N2)) &kp LG(LA(N1))
+        &kp PRCNT      &kp EQUAL      &kp STAR       &kp HASH       &kp GRAVE          &kp LG(LA(N6)) &kp LG(LA(J))  &kp LG(LA(K))  &kp LG(LA(L))  &kp LG(LC(N1))
+        &kp CARET      &kp AMPS       &kp DLLR       &kp BSLH                          &kp LG(LC(N5)) &kp LG(LC(N4)) &kp LG(LC(N3)) &kp LG(LC(N2))
+                                      &trans         &trans         &trans             &kp LG(LC(N6)) &kp LG(LC(N7)) &trans
             >;
         };
 
