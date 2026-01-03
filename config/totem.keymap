@@ -44,14 +44,13 @@
             >;
         };
 
-        /* Nav Layer */
-
+/* Nav Layer */
         nav_num {
             bindings = <
-       &kp LA(BSPC)  &kp BSPC      &kp UP    &kp DEL        &kp LA(DEL)      &kp N5     &kp N6     &kp N7     &kp N8    &kp N9
-       &kp LA(LEFT)  &kp LEFT      &kp DOWN  &kp RIGHT      &kp LA(RIGHT)    &kp N0     &kp N1     &kp N2     &kp N3    &kp N4
-&none  &kp LG(UP)    &kp LG(LEFT)  &kp RET   &kp LG(RIGHT)  &kp LG(DOWN)     &kp DOT    &kp PLUS   &kp MINUS  &kp STAR  &kp FSLH  &none
-                                   &trans    &trans         &trans           &kp EQUAL  &kp RSHFT  &kp PRCNT
+       &kp LA(BSPC) &kp BSPC          &hm LS(UP) UP      &kp DEL             &kp LA(DEL)      &kp PLUS      &kp N1        &kp N2        &kp N3        &kp STAR
+       &kp LA(LEFT) &hm LS(LEFT) LEFT &hm LS(DOWN) DOWN  &hm LS(RIGHT) RIGHT &kp LA(RIGHT)    &kp MINUS     &kp N4        &kp N5        &kp N6        &kp FSLH
+&none  &kp LG(UP)   &kp LG(LEFT)      &kp RET            &kp LG(RIGHT)       &kp LG(DOWN)     &kp EQUAL     &kp N7        &kp N8        &kp N9        &kp DOT         &kp N0
+                                      &trans             &trans              &trans           &kp EQUAL     &kp RSHFT     &kp PRCNT
             >;
         };
 
