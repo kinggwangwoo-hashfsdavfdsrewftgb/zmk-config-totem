@@ -24,7 +24,7 @@
 
         cut {
             bindings = <&kp K_CUT>;
-            key-positions = <22 21 20>;
+            key-positions = <21 20>;
             timeout-ms = <100>;
         };
 
@@ -44,7 +44,6 @@
             bindings = <&kp K_FIND>;
             key-positions = <14 12>;
             timeout-ms = <100>;
-            require-prior-idle-ms = <50>;
         };
 
         left_half {
