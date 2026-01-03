@@ -68,13 +68,17 @@
 
         /* Layer 4: Sym (Already Configured) */
 
-        sym_layer {
-            bindings = <
-           &kp EXCL   &kp AT     &kp UNDER       &kp PLUS        &kp TILDE         &kp LG(LA(N5))           &kp LG(LA(N4))  &kp LG(LA(I))  &kp LG(LA(N2))  &kp LG(LA(N1))
-           &kp PRCNT  &kp EQUAL  &kp STAR        &kp HASH        &kp GRAVE         &kp LG(LA(N6))           &kp LG(LA(J))   &kp LG(LA(K))  &kp LG(LA(L))   &kp LG(LC(N1))
-&kp CARET  &kp AMPS   &kp DLLR   &kp BSLH        &kp LG(LC(N5))  &kp LG(LC(N4))    &hm LG(LC(A)) LA(LC(C))  &kp LG(LC(N2))  &trans         &trans          &trans          &kp LG(LC(N6))
-                                 &kp LG(LC(N7))  &trans
-            >;
+bindings = <
+        /* * Left: Num Pad Mirrored (* 9 8 7 + 대응)
+         * Right: Hold = Cmd+Opt(Group A) / Tap = Cmd+Ctrl(Group C) 
+         * Center(IJKL) = Cmd+Opt Fixed (Direction)
+         */
+
+        &kp LBKT       &kp LPAR       &kp STAR       &kp AMPS       &kp RBKT         &hm LG(LA(N5)) LG(LC(N5)) &hm LG(LA(N4)) LG(LC(N4)) &kp LG(LA(I))   &hm LG(LA(N2)) LG(LC(N2)) &hm LG(LA(N1)) LG(LC(N1))
+        &kp BSLH       &kp CARET      &kp PRCNT      &kp DLLR       &kp UNDER        &hm LG(LA(N6)) LG(LC(N6)) &kp LG(LA(J))             &kp LG(LA(K))   &kp LG(LA(L))             &hm LG(LA(N3)) LG(LC(N3))
+        &kp RPAR       &kp HASH       &kp AT         &kp EXCL                        &hm LG(LA(N7)) LG(LC(N7)) &trans                    &trans          &trans
+                                      &trans         &trans         &trans           &trans                    &trans                    &trans
+    >;
         };
 
         /* Number Layer (Placeholder) */
