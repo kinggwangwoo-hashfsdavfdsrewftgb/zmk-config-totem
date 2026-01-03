@@ -66,16 +66,14 @@
             >;
         };
 
-        /* Sym Layer */
+        /* Layer 4: Sym (Already Configured) */
 
-        sym_func {
-/* Sym_Funct Layer */
-base {
+        sym_layer {
             bindings = <
-       &kp ESC  &kp LBRC  &kp RBRC  &none    &none        &kp F1   &kp F2     &kp F3   &kp F4   &kp F5
-       &kp TAB  &kp LBKT  &kp RBKT  &kp RET  &kp BSLH     &kp F6   &kp F7     &kp F8   &kp F9   &kp F10
-&none  &kp LT   &kp LPAR  &kp RPAR  &kp GT   &kp UNDER    &kp F11  &kp F12    &kp F13  &kp F14  &kp F15  &kp F16
-                          &trans    &trans   &trans       &none    &kp RSHFT  &none
+           &kp ESC        &kp LEFT_BRACE        &kp RIGHT_BRACE        &none             &none             &kp F1   &kp F2           &kp F3   &kp F4   &kp F5
+           &kp TAB        &kp LBKT              &kp RBKT               &kp ENTER         &kp BSLH          &kp F6   &kp F7           &kp F8   &kp F9   &kp F10
+&kp GRAVE  &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN  &kp UNDERSCORE    &kp F11  &kp F12          &kp F13  &kp F14  &kp F15  &kp F16
+                                                &trans                 &trans            &trans            &none    &kp RIGHT_SHIFT  &none
             >;
         };
 
