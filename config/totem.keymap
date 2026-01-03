@@ -26,6 +26,7 @@
             bindings = <&kp K_CUT>;
             key-positions = <22 21 20>;
             timeout-ms = <100>;
+            require-prior-idle-ms = <50>;
         };
 
         coppy {
