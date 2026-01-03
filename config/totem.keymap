@@ -23,8 +23,8 @@
         compatible = "zmk,combos";
 
         cut {
-            bindings = <&kp K_CUT>;
-            key-positions = <21 20>;
+            bindings = <&kp LG(X)>;
+            key-positions = <21 22>;
             timeout-ms = <100>;
         };
 
@@ -134,7 +134,7 @@
 
         all {
             bindings = <&kp LG(A)>;
-            key-positions = <10 11>;
+            key-positions = <10 1 2>;
             timeout-ms = <100>;
             require-prior-idle-ms = <50>;
         };
