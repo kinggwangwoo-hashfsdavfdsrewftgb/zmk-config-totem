@@ -141,7 +141,7 @@
 
         reload {
             bindings = <&kp LG(R)>;
-            key-positions = <2 3>;
+            key-positions = <2 3 1>;
         };
 
         undo {
