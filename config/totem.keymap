@@ -24,12 +24,12 @@
 
         cut {
             bindings = <&kp K_CUT>;
-            key-positions = <21 22>;
+            key-positions = <22 21 20>;
         };
 
         coppy {
             bindings = <&kp K_COPY>;
-            key-positions = <22 23>;
+            key-positions = <23 22>;
         };
 
         paste {
@@ -44,22 +44,22 @@
 
         left_half {
             bindings = <&kp LA(LC(LEFT))>;
-            key-positions = <16 17>;
+            key-positions = <16 17 31>;
         };
 
         righthalf {
             bindings = <&kp LA(LC(RIGHT))>;
-            key-positions = <17 18>;
+            key-positions = <17 18 31>;
         };
 
         leftquarter {
             bindings = <&kp LA(LC(Z))>;
-            key-positions = <16 17 18>;
+            key-positions = <16 17 18 31>;
         };
 
         rightq {
             bindings = <&kp LA(LC(X))>;
-            key-positions = <18 19>;
+            key-positions = <18 19 31>;
         };
 
         Full {
@@ -140,6 +140,11 @@
         reload {
             bindings = <&kp LG(R)>;
             key-positions = <2 3>;
+        };
+
+        undo {
+            bindings = <&kp LG(Z)>;
+            key-positions = <21 22>;
         };
     };
 
