@@ -260,9 +260,9 @@
 
         td_num {
             bindings = <
-        &kp LG(Q)  &kp LG(W)  &kp LG(E)  &kp LG(V)  &kp LG(R)        &kp BACKSPACE  &kp N9  &kp N8  &kp N7  &kp star
-        &kp LG(A)  &kp LG(S)  &kp LCTRL  &kp LG(F)  &kp BACKSPACE    &kp FSLH  &kp N6  &kp N5  &kp N4  &kp FSLH
-&trans  &kp RG(Z)  &kp RG(X)  &kp LG(C)  &kp LG(V)  &kp LG(LS(Z))    &kp GRAVE    &kp N3  &kp N2  &kp N1  &kp N0  &lt 10 TAB
+        &hm RBKT RIGHT_BRACKET      &kp AMPERSAND    &kp ASTERISK  &hm RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp LG(E)        &kp BACKSPACE  &kp N9  &kp N8  &kp N7  &kp star
+        &hm LEFT_BRACE RIGHT_BRACE  &kp DOLLAR       &kp PERCENT   &kp CARET                               &trans    &kp FSLH  &kp N6  &kp N5  &kp N4  &kp FSLH
+&trans  &trans                      &kp EXCLAMATION  &kp AT_SIGN   &kp HASH    &kp GRAVE    &kp N3  &kp N2  &kp N1  &kp N0  &lt 10 TAB
                               &trans     &trans     &trans           &trans         &trans            &trans
         };
 
