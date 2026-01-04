@@ -224,14 +224,12 @@
 
         base {
             bindings = <
-               &kp Q        &kp W       &kp E       &kp R        &kp T        &kp Y      &kp U            &kp I               &kp O       &kp P
-               &hm LCTRL A  &hm LALT S  &hm LGUI D  &hm LSHFT F  &kp G        &kp H      &hm RSHFT J      &hm RGUI K          &hm RALT L  &hm RCTRL SEMI
-&lt 8 LC(F19)  &kp Z        &kp X       &kp C       &kp V        &kp B        &kp N      &kp M            &kp COMMA           &kp DOT     &kp FSLH        &kp BACKSPACE
-                                        &lt 1 ESC   &lt 2 SPACE  &lt 3 TAB    &lt 4 RET  &lt 6 BACKSPACE  &lt 7 LG(CAPSLOCK)
+                &kp Q        &kp W       &kp E       &kp R        &kp T        &kp Y      &kp U            &kp I               &kp O       &kp P
+                &hm LCTRL A  &hm LALT S  &hm LGUI D  &hm LSHFT F  &kp G        &kp H      &hm RSHFT J      &hm RGUI K          &hm RALT L  &hm RCTRL SEMI
+&lt 10 LC(F19)  &kp Z        &kp X       &kp C       &kp V        &kp B        &kp N      &kp M            &kp COMMA           &kp DOT     &kp FSLH        &kp BACKSPACE
+                                         &lt 1 ESC   &lt 2 SPACE  &lt 3 TAB    &lt 4 RET  &lt 6 BACKSPACE  &lt 7 LG(CAPSLOCK)
             >;
         };
-
-        /* Media Layer */
 
         Media {
             bindings = <
@@ -242,51 +240,41 @@
             >;
         };
 
-        /* Nav Layer (Right Hand Numpad) */
-
         nav_num {
             bindings = <
                 &kp LA(BSPC)  &kp BSPC      &kp UP    &kp DEL        &kp LA(DEL)      &kp BACKSPACE  &kp N7     &kp N8     &kp N9  &kp STAR
                 &kp LA(LEFT)  &kp LEFT      &kp DOWN  &kp RIGHT      &kp LA(RIGHT)    &kp MINUS      &kp N4     &kp N5     &kp N6  &kp FSLH
-&kp LEFT_SHIFT  &kp LG(UP)    &kp LG(LEFT)  &kp RET   &kp LG(RIGHT)  &kp LG(DOWN)     &kp DOT        &kp N1     &kp N2     &kp N3  &kp N0    &lt 8 TAB
+&kp LEFT_SHIFT  &kp LG(UP)    &kp LG(LEFT)  &kp RET   &kp LG(RIGHT)  &kp LG(DOWN)     &kp DOT        &kp N1     &kp N2     &kp N3  &kp N0    &lt 10 TAB
                                             &trans    &trans         &trans           &kp EQUAL      &kp RSHFT  &kp PRCNT
             >;
         };
 
-        /* Mouse Layer (Left Hand Numpad + Right Hand Mouse) */
-
         Num_Mouse {
             bindings = <
-           &kp STAR  &kp N7        &kp N8     &kp N9        &kp BACKSPACE    &msc SCRL_LEFT  &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &msc SCRL_RIGHT
-           &kp FSLH  &kp NUMBER_4  &kp N5     &kp NUMBER_6  &kp MINUS        &mmv MOVE_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
-&lt 8 TAB  &kp N0    &kp NUMBER_1  &kp N2     &kp NUMBER_3  &kp GRAVE        &kp RIGHT_GUI   &mkp MB4        &mkp MB5        &none            &none            &kp LEFT_SHIFT
-                                   &kp EQUAL  &trans        &trans           &mo 4           &mkp LCLK       &mkp RCLK
+            &kp STAR  &kp N7        &kp N8     &kp N9        &kp BACKSPACE    &msc SCRL_LEFT  &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &msc SCRL_RIGHT
+            &kp FSLH  &kp NUMBER_4  &kp N5     &kp NUMBER_6  &kp MINUS        &mmv MOVE_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
+&lt 10 TAB  &kp N0    &kp NUMBER_1  &kp N2     &kp NUMBER_3  &kp GRAVE        &kp RIGHT_GUI   &mkp MB4        &mkp MB5        &none            &none            &kp LEFT_SHIFT
+                                    &kp EQUAL  &trans        &trans           &mo 9           &mkp LCLK       &mkp RCLK
             >;
         };
 
-        /* Layer 4: Sym (Already Configured) */
-
-        sym_layer {
+        td_num {
             bindings = <
-        &hm RBKT RIGHT_BRACKET      &kp AMPERSAND    &kp ASTERISK  &hm RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp LG(E)    &hm LG(LA(N5)) LG(LC(N5))  &hm LG(LA(N4)) LG(LC(N4))  &kp LG(LA(I))  &hm LG(LA(N2)) LG(LC(N2))  &hm LG(LA(N1)) LG(LC(N1))
-        &hm LEFT_BRACE RIGHT_BRACE  &kp DOLLAR       &kp PERCENT   &kp CARET                               &trans       &hm LG(LA(N6)) LG(LC(N6))  &kp LG(LA(J))              &kp LG(LA(K))  &kp LG(LA(L))              &hm LG(LA(N3)) LG(LC(N3))
-&trans  &trans                      &kp EXCLAMATION  &kp AT_SIGN   &kp HASH                                &kp GRAVE    &trans                     &trans                     &trans         &trans                     &trans                     &trans
-                                                     &trans        &trans                                  &trans       &trans                     &trans                     &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
-
-        /* Number Layer (Placeholder) */
 
         Num_Nav {
             bindings = <
-           &kp STAR  &kp N9  &kp N8  &kp N7  &kp BACKSPACE    &kp LA(DEL)    &kp DEL            &hm LS(UP) UP      &kp BSPC             &kp LA(BSPC)
-           &kp FSLH  &kp N6  &kp N5  &kp N4  &kp MINUS        &kp LA(RIGHT)  &hm LS(LEFT) LEFT  &hm LS(DOWN) DOWN  &hm LS(RIGHT) RIGHT  &kp LA(LEFT)
-&lt 8 TAB  &kp N0    &kp N3  &kp N2  &kp N1  &kp GRAVE        &kp LG(DOWN)   &kp LG(RIGHT)      &kp RET            &kp LG(LEFT)         &kp LG(UP)    &kp LC(LEFT_SHIFT)
-                             &trans  &trans  &kp EQUAL        &trans         &trans             &trans
+            &kp STAR  &kp N9  &kp N8  &kp N7  &kp BACKSPACE    &kp LA(DEL)    &kp DEL            &hm LS(UP) UP      &kp BSPC             &kp LA(BSPC)
+            &kp FSLH  &kp N6  &kp N5  &kp N4  &kp MINUS        &kp LA(RIGHT)  &hm LS(LEFT) LEFT  &hm LS(DOWN) DOWN  &hm LS(RIGHT) RIGHT  &kp LA(LEFT)
+&lt 10 TAB  &kp N0    &kp N3  &kp N2  &kp N1  &kp GRAVE        &kp LG(DOWN)   &kp LG(RIGHT)      &kp RET            &kp LG(LEFT)         &kp LG(UP)    &kp LC(LEFT_SHIFT)
+                              &trans  &trans  &kp EQUAL        &trans         &trans             &trans
             >;
         };
-
-        /* Additional Layer: Alphas are Shifted, Thumbs are Normal (No Shift, No LT) */
 
         Macrol {
             bindings = <
@@ -297,8 +285,6 @@
             >;
         };
 
-        /* Device Layer */
-
         device {
             bindings = <
        &none       &kp F14       &kp F15       &none     &none    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
@@ -308,14 +294,21 @@
             >;
         };
 
-        /* Button Layer (Blocks) */
-
-        layer_8 {
+        markdown_layer {
             bindings = <
-        &kp LG(Q)  &kp LG(W)  &kp LG(E)  &kp LG(V)  &kp LG(R)        &kp RG(RS(Z))  &kp RG(V)  &kp RG(C)  &kp RG(X)  &kp RG(Z)
-        &kp LG(A)  &kp LG(S)  &kp LCTRL  &kp LG(F)  &kp BACKSPACE    &none          &mkp LCLK  &mkp MCLK  &kp RG(L)  &mkp MB4
-&trans  &kp RG(Z)  &kp RG(X)  &kp LG(C)  &kp LG(V)  &kp LG(LS(Z))    &none          &mkp MB4   &mkp MB5   &none      &none      &kp RIGHT_SHIFT
-                              &trans     &trans     &trans           &trans         &trans     &trans
+        &hm RBKT RIGHT_BRACKET      &kp AMPERSAND    &kp ASTERISK  &hm RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp LG(E)    &hm LG(LA(N5)) LG(LC(N5))  &hm LG(LA(N4)) LG(LC(N4))  &kp LG(LA(I))  &hm LG(LA(N2)) LG(LC(N2))  &hm LG(LA(N1)) LG(LC(N1))
+        &hm LEFT_BRACE RIGHT_BRACE  &kp DOLLAR       &kp PERCENT   &kp CARET                               &trans       &hm LG(LA(N6)) LG(LC(N6))  &kp LG(LA(J))              &kp LG(LA(K))  &kp LG(LA(L))              &hm LG(LA(N3)) LG(LC(N3))
+&trans  &trans                      &kp EXCLAMATION  &kp AT_SIGN   &kp HASH                                &kp GRAVE    &trans                     &trans                     &trans         &trans                     &trans                     &trans
+                                                     &trans        &trans                                  &trans       &trans                     &trans                     &trans
+            >;
+        };
+
+        button_8 {
+            bindings = <
+        &kp LG(Q)  &kp LG(W)  &kp LG(E)  &kp LG(V)  &kp LG(R)        &kp RG(RS(Z))  &kp RG(V)         &kp RG(C)         &kp RG(X)         &kp RG(Z)
+        &kp LG(A)  &kp LG(S)  &kp LCTRL  &kp LG(F)  &kp BACKSPACE    &none          &mkp LCLK         &mkp MCLK         &kp RG(L)         &mkp MB4
+&trans  &kp RG(Z)  &kp RG(X)  &kp LG(C)  &kp LG(V)  &kp LG(LS(Z))    &none          &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(N5)  &kp RIGHT_SHIFT
+                              &trans     &trans     &trans           &trans         &trans            &trans
             >;
         };
     };
@@ -326,6 +319,11 @@
         device {
             if-layers = <1 2>;
             then-layer = <7>;
+        };
+
+        markdownlayer {
+            if-layers = <3 4>;
+            then-layer = <8>;
         };
     };
 };
