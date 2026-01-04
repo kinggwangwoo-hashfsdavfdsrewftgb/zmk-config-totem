@@ -260,11 +260,10 @@
 
         td_num {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-            >;
+        &kp LG(Q)  &kp LG(W)  &kp LG(E)  &kp LG(V)  &kp LG(R)        &kp BACKSPACE  &kp N9  &kp N8  &kp N7  &kp star
+        &kp LG(A)  &kp LG(S)  &kp LCTRL  &kp LG(F)  &kp BACKSPACE    &kp FSLH  &kp N6  &kp N5  &kp N4  &kp FSLH
+&trans  &kp RG(Z)  &kp RG(X)  &kp LG(C)  &kp LG(V)  &kp LG(LS(Z))    &kp GRAVE    &kp N3  &kp N2  &kp N1  &kp N0  &lt 10 TAB
+                              &trans     &trans     &trans           &trans         &trans            &trans
         };
 
         Num_Nav {
