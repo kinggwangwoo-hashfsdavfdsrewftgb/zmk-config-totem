@@ -259,7 +259,7 @@
             bindings = <
            &kp STAR  &kp N9  &kp N8     &kp N7  &kp BACKSPACE    &msc SCRL_LEFT  &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &msc SCRL_RIGHT
            &kp FSLH  &kp N6  &kp N5     &kp N4  &kp MINUS        &mmv MOVE_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
-&lt 8 TAB  &kp N0    &kp N3  &kp N2     &kp N1  &kp DOT          &kp RIGHT_GUI   &mkp MB4        &mkp MB5        &none            &none            &kp LEFT_SHIFT
+&lt 8 TAB  &kp N0    &kp N3  &kp N2     &kp N1  &kp GRAVE        &kp RIGHT_GUI   &mkp MB4        &mkp MB5        &none            &none            &kp LEFT_SHIFT
                              &kp EQUAL  &trans  &trans           &mkp LCLK       &mkp RCLK       &mkp MCLK
             >;
         };
@@ -270,7 +270,7 @@
             bindings = <
         &hm RBKT RIGHT_BRACKET      &hm LEFT_PARENTHESIS RIGHT_PARENTHESIS  &kp ASTERISK  &kp AMPERSAND    &kp LG(E)    &hm LG(LA(N5)) LG(LC(N5))  &hm LG(LA(N4)) LG(LC(N4))  &kp LG(LA(I))  &hm LG(LA(N2)) LG(LC(N2))  &hm LG(LA(N1)) LG(LC(N1))
         &hm LEFT_BRACE RIGHT_BRACE  &kp LCTRL                               &kp PERCENT   &kp DOLLAR       &trans       &hm LG(LA(N6)) LG(LC(N6))  &kp LG(LA(J))              &kp LG(LA(K))  &kp LG(LA(L))              &hm LG(LA(N3)) LG(LC(N3))
-&trans  &trans                      &kp HASH                                &kp AT_SIGN   &kp EXCLAMATION  &trans       &trans                     &trans                     &trans         &trans                     &trans                     &trans
+&trans  &trans                      &kp HASH                                &kp AT_SIGN   &kp EXCLAMATION  &kp GRAVE    &trans                     &trans                     &trans         &trans                     &trans                     &trans
                                                                             &trans        &trans           &trans       &trans                     &trans                     &trans
             >;
         };
@@ -281,7 +281,7 @@
             bindings = <
            &kp STAR  &kp N9  &kp N8  &kp N7  &kp BACKSPACE    &kp LA(DEL)    &kp DEL            &hm LS(UP) UP      &kp BSPC             &kp LA(BSPC)
            &kp FSLH  &kp N6  &kp N5  &kp N4  &kp MINUS        &kp LA(RIGHT)  &hm LS(LEFT) LEFT  &hm LS(DOWN) DOWN  &hm LS(RIGHT) RIGHT  &kp LA(LEFT)
-&lt 8 TAB  &kp N0    &kp N3  &kp N2  &kp N1  &kp DOT          &kp LG(DOWN)   &kp LG(RIGHT)      &kp RET            &kp LG(LEFT)         &kp LG(UP)    &mo 8
+&lt 8 TAB  &kp N0    &kp N3  &kp N2  &kp N1  &kp GRAVE        &kp LG(DOWN)   &kp LG(RIGHT)      &kp RET            &kp LG(LEFT)         &kp LG(UP)    &mo 8
                              &trans  &trans  &kp EQUAL        &trans         &trans             &trans
             >;
         };
