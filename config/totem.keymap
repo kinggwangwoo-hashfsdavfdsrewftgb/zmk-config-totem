@@ -312,7 +312,7 @@
 
         layer_8 {
             bindings = <
-        &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(LS(Z))    &kp RG(RS(Z))  &kp RG(V)  &kp RG(C)  &kp RG(X)  &kp RG(Z)
+        &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(R)        &kp RG(RS(Z))  &kp RG(V)  &kp RG(C)  &kp RG(X)  &kp RG(Z)
         &kp LG(A)  &kp LG(S)  &kp LCTRL  &kp LG(F)  &kp BACKSPACE    &none          &mkp LCLK  &mkp MCLK  &kp RG(L)  &mkp MB4
 &trans  &kp RG(Z)  &kp RG(X)  &kp LG(C)  &kp LG(V)  &kp LG(LS(Z))    &none          &mkp MB4   &mkp MB5   &none      &none      &kp RIGHT_SHIFT
                               &trans     &trans     &trans           &trans         &trans     &trans
