@@ -268,8 +268,8 @@
 
         sym_layer {
             bindings = <
-        &hm RBKT RIGHT_BRACKET      &kp AMPERSAND    &kp ASTERISK  &hm LEFT_PARENTHESIS RIGHT_PARENTHESIS  &kp LG(E)    &hm LG(LA(N5)) LG(LC(N5))  &hm LG(LA(N4)) LG(LC(N4))  &kp LG(LA(I))  &hm LG(LA(N2)) LG(LC(N2))  &hm LG(LA(N1)) LG(LC(N1))
-        &hm LEFT_BRACE RIGHT_BRACE  &kp DOLLAR       &kp PERCENT   &kp LCTRL                               &trans       &hm LG(LA(N6)) LG(LC(N6))  &kp LG(LA(J))              &kp LG(LA(K))  &kp LG(LA(L))              &hm LG(LA(N3)) LG(LC(N3))
+        &hm RBKT RIGHT_BRACKET      &kp AMPERSAND    &kp ASTERISK  &hm RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp LG(E)    &hm LG(LA(N5)) LG(LC(N5))  &hm LG(LA(N4)) LG(LC(N4))  &kp LG(LA(I))  &hm LG(LA(N2)) LG(LC(N2))  &hm LG(LA(N1)) LG(LC(N1))
+        &hm LEFT_BRACE RIGHT_BRACE  &kp DOLLAR       &kp PERCENT   &kp CARET                               &trans       &hm LG(LA(N6)) LG(LC(N6))  &kp LG(LA(J))              &kp LG(LA(K))  &kp LG(LA(L))              &hm LG(LA(N3)) LG(LC(N3))
 &trans  &trans                      &kp EXCLAMATION  &kp AT_SIGN   &kp HASH                                &kp GRAVE    &trans                     &trans                     &trans         &trans                     &trans                     &trans
                                                      &trans        &trans                                  &trans       &trans                     &trans                     &trans
             >;
