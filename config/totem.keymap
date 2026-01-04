@@ -298,10 +298,10 @@
 
         layer_8 {
             bindings = <
-        &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_REDO    &kp K_REDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO
-        &kp LG(A)   &kp LG(S)  &kp LCTRL   &kp LSHFT    &none         &none       &mkp LCLK    &mkp MCLK   &mkp RCLK  &mkp MB4
-&trans  &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_REDO    &none       &mkp MB4     &mkp MB5    &none      &none       &trans
-                               &trans      &trans       &trans        &mkp LCLK   &mkp MCLK    &mkp RCLK
+        &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(LS(Z))    &kp RG(RS(Z))  &kp RG(V)  &kp RG(C)  &kp RG(X)  &kp RG(Z)
+        &kp LG(A)  &kp LG(S)  &kp LCTRL  &kp LG(F)  &kp BACKSPACE    &none          &mkp LCLK  &mkp MCLK  &mkp RCLK  &mkp MB4
+&trans  &kp RG(Z)  &kp RG(X)  &kp LG(C)  &kp LG(V)  &kp LG(LS(Z))    &none          &mkp MB4   &mkp MB5   &none      &none      &trans
+                              &trans     &trans     &trans           &trans         &mkp MCLK  &mkp RCLK
             >;
         };
     };
