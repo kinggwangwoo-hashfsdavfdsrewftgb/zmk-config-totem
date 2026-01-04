@@ -29,19 +29,19 @@
         };
 
         coppy {
-            bindings = <&kp K_COPY>;
+            bindings = <&kp LG(C)>;
             key-positions = <23 22>;
             timeout-ms = <100>;
         };
 
         paste {
-            bindings = <&kp K_PASTE>;
+            bindings = <&kp LG(V)>;
             key-positions = <23 24>;
             timeout-ms = <100>;
         };
 
         find {
-            bindings = <&kp K_FIND>;
+            bindings = <&kp LG(F)>;
             key-positions = <14 12>;
             timeout-ms = <100>;
         };
@@ -120,14 +120,14 @@
 
         raycast {
             bindings = <&kp LG(SPACE)>;
-            key-positions = <13 20>;
+            key-positions = <13 11 12>;
             timeout-ms = <100>;
             require-prior-idle-ms = <50>;
         };
 
         finder {
             bindings = <&kp LA(LG(SPACE))>;
-            key-positions = <20 12 13>;
+            key-positions = <12 13 23 24>;
             timeout-ms = <100>;
             require-prior-idle-ms = <50>;
         };
@@ -155,28 +155,28 @@
 
         lq {
             bindings = <&kp LA(LC(Z))>;
-            key-positions = <20 21 13>;
+            key-positions = <20 10 11>;
             timeout-ms = <100>;
             require-prior-idle-ms = <50>;
         };
 
         rug {
             bindings = <&kp LA(LC(X))>;
-            key-positions = <20 22 13>;
+            key-positions = <20 13 11 12>;
             timeout-ms = <100>;
             require-prior-idle-ms = <50>;
         };
 
         lefthalf {
             bindings = <&kp LA(LC(LEFT))>;
-            key-positions = <20 13 1>;
+            key-positions = <20 12 13>;
             timeout-ms = <100>;
             require-prior-idle-ms = <50>;
         };
 
         rhalf {
             bindings = <&kp LA(LC(RIGHT))>;
-            key-positions = <20 13 2>;
+            key-positions = <20 12 11>;
             timeout-ms = <100>;
             require-prior-idle-ms = <50>;
         };
