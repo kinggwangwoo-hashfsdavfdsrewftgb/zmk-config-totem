@@ -97,7 +97,7 @@
 
         magnify {
             bindings = <&kp LG(PLUS)>;
-            key-positions = <2 3 20>;
+            key-positions = <20 2>;
             timeout-ms = <100>;
             require-prior-idle-ms = <50>;
             slow-release;
@@ -105,7 +105,7 @@
 
         micro {
             bindings = <&kp LG(MINUS)>;
-            key-positions = <20 12 13>;
+            key-positions = <20 3>;
             timeout-ms = <100>;
             require-prior-idle-ms = <50>;
             slow-release;
@@ -141,7 +141,7 @@
 
         lasttab {
             bindings = <&kp LG(LS(T))>;
-            key-positions = <4 20 12>;
+            key-positions = <4 12 11>;
             timeout-ms = <100>;
             require-prior-idle-ms = <50>;
         };
@@ -155,7 +155,7 @@
 
         lq {
             bindings = <&kp LA(LC(Z))>;
-            key-positions = <20 10 11>;
+            key-positions = <11 20>;
             timeout-ms = <100>;
             require-prior-idle-ms = <50>;
         };
@@ -169,14 +169,14 @@
 
         lefthalf {
             bindings = <&kp LA(LC(LEFT))>;
-            key-positions = <20 12 13>;
+            key-positions = <20 12 11>;
             timeout-ms = <100>;
             require-prior-idle-ms = <50>;
         };
 
         rhalf {
             bindings = <&kp LA(LC(RIGHT))>;
-            key-positions = <20 12 11>;
+            key-positions = <20 12 13>;
             timeout-ms = <100>;
             require-prior-idle-ms = <50>;
         };
@@ -198,6 +198,20 @@
         redo {
             bindings = <&kp LG(LS(Z))>;
             key-positions = <10 11 12>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <50>;
+        };
+
+        fullsize {
+            bindings = <&kp LC(LG(F))>;
+            key-positions = <17 16 31 27 28>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <50>;
+        };
+
+        fullsize0 {
+            bindings = <&kp LC(LG(F))>;
+            key-positions = <20 23 24 12 13>;
             timeout-ms = <100>;
             require-prior-idle-ms = <50>;
         };
@@ -276,10 +290,10 @@
 
         Additional {
             bindings = <
-                 &kp LS(Q)            &kp LS(W)           &kp LS(E)           &kp LS(R)  &kp LS(T)    &kp LS(Y)  &kp LS(U)        &kp LS(I)           &kp LS(O)           &kp LS(P)
-                 &hm LS(LCTRL) LS(A)  &hm LS(LALT) LS(S)  &hm LS(LGUI) LS(D)  &kp LS(F)  &kp LS(G)    &kp RS(H)  &hm RS(J) RS(J)  &hm RS(RGUI) RS(K)  &hm RS(RALT) RS(L)  &hm RS(RCTRL) RA(SEMI)
-&kp LS(LC(F19))  &kp LS(Z)            &kp LS(X)           &kp LS(C)           &kp LS(V)  &kp LS(B)    &kp LS(N)  &kp LS(M)        &kp LS(COMMA)       &kp LS(DOT)         &kp LS(FSLH)            &kp LC(F19)
-                                                          &kp ESC             &kp SPACE  &kp TAB      &kp RET    &kp BSPC         &trans
+                 &kp LS(Q)            &kp LG(W)           &kp LS(E)           &kp LS(R)  &kp LS(T)    &kp LS(Y)  &kp LS(U)               &kp LS(I)            &kp LS(O)                  &kp LS(P)
+                 &hm LS(LCTRL) LS(A)  &hm LS(LALT) LS(S)  &hm LS(LGUI) LS(D)  &kp LG(F)  &kp LS(G)    &kp RS(H)  &hm RS(J) RG(NUMBER_4)  &hm RS(RGUI) RG(N5)  &hm RS(RALT) RG(NUMBER_6)  &hm RS(RCTRL) RA(SEMI)
+&kp LS(LC(F19))  &kp LS(LG(Z))        &kp LG(X)           &kp RG(C)           &kp LG(V)  &kp LS(B)    &kp LS(N)  &kp RG(NUMBER_1)        &kp RG(NUMBER_2)     &kp RG(NUMBER_3)           &kp LS(FSLH)            &kp LC(F19)
+                                                          &kp ESC             &kp SPACE  &kp TAB      &kp RET    &kp BSPC                &trans
             >;
         };
 
@@ -301,7 +315,7 @@
         &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(LS(Z))    &kp RG(RS(Z))  &kp RG(V)  &kp RG(C)  &kp RG(X)  &kp RG(Z)
         &kp LG(A)  &kp LG(S)  &kp LCTRL  &kp LG(F)  &kp BACKSPACE    &none          &mkp LCLK  &mkp MCLK  &mkp RCLK  &mkp MB4
 &trans  &kp RG(Z)  &kp RG(X)  &kp LG(C)  &kp LG(V)  &kp LG(LS(Z))    &none          &mkp MB4   &mkp MB5   &none      &none      &kp RIGHT_SHIFT
-                              &trans     &trans     &trans           &trans         &mkp MCLK  &mkp RCLK
+                              &trans     &trans     &trans           &trans         &trans     &trans
             >;
         };
     };
