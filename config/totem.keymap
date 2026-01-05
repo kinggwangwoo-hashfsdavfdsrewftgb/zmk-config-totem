@@ -289,7 +289,7 @@
            &kp STAR       &hm LS(N7) N7              &hm LS(N8) N8        &hm LS(N9) N9              &kp BACKSPACE           &msc SCRL_LEFT  &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &msc SCRL_RIGHT
            &kp FSLH       &hm LS(NUMBER_4) NUMBER_4  &hm LS(N5) N5        &hm LS(NUMBER_6) NUMBER_6  &hm UNDERSCORE MINUS    &mmv MOVE_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
 &lt 8 TAB  &hm LS(N0) N0  &hm LS(NUMBER_1) NUMBER_1  &hm LS(N2) NUMBER_2  &hm LS(NUMBER_3) NUMBER_3  &hm TILDE GRAVE         &kp RIGHT_GUI   &mkp MB4        &mkp MB5        &none            &none            &kp LEFT_SHIFT
-                                                     &kp EQUAL            &trans                     &trans                  &mo 6           &mkp LCLK       &mkp RCLK
+                                                     &kp EQUAL            &kp LEFT_GUI               &trans                  &mo 5           &mkp LCLK       &mkp RCLK
             >;
         };
 
@@ -302,21 +302,21 @@
             >;
         };
 
-        Macrol {
-            bindings = <
-                 &kp LS(Q)            &kp LG(W)           &kp LS(E)           &kp LS(R)  &kp LS(T)    &kp LS(Y)  &kp LS(U)               &kp LS(I)            &kp LS(O)                  &kp LS(P)
-                 &hm LS(LCTRL) LS(A)  &hm LS(LALT) LS(S)  &hm LS(LGUI) LS(D)  &kp LG(F)  &kp LS(G)    &kp RS(H)  &hm RS(J) RG(NUMBER_4)  &hm RS(RGUI) RG(N5)  &hm RS(RALT) RG(NUMBER_6)  &hm RS(RCTRL) RA(SEMI)
-&kp LS(LC(F19))  &kp LS(LG(Z))        &kp LG(X)           &kp RG(C)           &kp LG(V)  &kp LS(B)    &kp LS(N)  &kp RG(NUMBER_1)        &kp RG(NUMBER_2)     &kp RG(NUMBER_3)           &kp LS(FSLH)            &kp LC(F19)
-                                                          &kp ESC             &kp SPACE  &kp TAB      &kp RET    &kp BSPC                &trans
-            >;
-        };
-
         markdown_layer {
             bindings = <
         &hm RBKT RIGHT_BRACKET      &kp AMPERSAND    &kp ASTERISK  &hm RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp LG(E)    &hm LG(LA(N5)) LG(LC(N5))  &hm LG(LA(N4)) LG(LC(N4))  &kp LG(LA(I))  &hm LG(LA(N2)) LG(LC(N2))  &hm LG(LA(N1)) LG(LC(N1))
         &hm LEFT_BRACE RIGHT_BRACE  &kp DOLLAR       &kp PERCENT   &kp CARET                               &trans       &hm LG(LA(N6)) LG(LC(N6))  &kp LG(LA(J))              &kp LG(LA(K))  &kp LG(LA(L))              &hm LG(LA(N3)) LG(LC(N3))
 &trans  &trans                      &kp EXCLAMATION  &kp AT_SIGN   &kp HASH                                &kp GRAVE    &trans                     &trans                     &trans         &trans                     &trans                     &trans
                                                      &trans        &trans                                  &trans       &trans                     &trans                     &trans
+            >;
+        };
+
+        Macrol {
+            bindings = <
+                 &kp LS(Q)            &kp LG(W)           &kp LS(E)           &kp LS(R)  &kp LS(T)    &kp LS(Y)  &kp LS(U)               &kp LS(I)            &kp LS(O)                  &kp LS(P)
+                 &hm LS(LCTRL) LS(A)  &hm LS(LALT) LS(S)  &hm LS(LGUI) LS(D)  &kp LG(F)  &kp LS(G)    &kp RS(H)  &hm RS(J) RG(NUMBER_4)  &hm RS(RGUI) RG(N5)  &hm RS(RALT) RG(NUMBER_6)  &hm RS(RCTRL) RA(SEMI)
+&kp LS(LC(F19))  &kp LS(LG(Z))        &kp LG(X)           &kp RG(C)           &kp LG(V)  &kp LS(B)    &kp LS(N)  &kp RG(NUMBER_1)        &kp RG(NUMBER_2)     &kp RG(NUMBER_3)           &kp LS(FSLH)            &kp LC(F19)
+                                                          &kp ESC             &kp SPACE  &kp TAB      &kp RET    &kp BSPC                &trans
             >;
         };
 
@@ -344,7 +344,7 @@
 
         device {
             if-layers = <1 2>;
-            then-layer = <7>;
+            then-layer = <8>;
         };
     };
 };
