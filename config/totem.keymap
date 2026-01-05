@@ -281,7 +281,7 @@
 
         Num_Mouse {
             bindings = <
-           &kp STAR       &hm LS(N7) N7              &hm LS(N8) N8        &hm LS(N9) N9              &kp BACKSPACE           &msc SCRL_LEFT  &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &msc SCRL_RIGHT
+           &kp STAR       &hm LS(N7) N7              &hm LS(N8) N8        &hm LS(N9) N9              &kp BACKSPACE           &msc SCRL_LEFT  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &msc SCRL_RIGHT
            &kp FSLH       &hm LS(NUMBER_4) NUMBER_4  &hm LS(N5) N5        &hm LS(NUMBER_6) NUMBER_6  &hm UNDERSCORE MINUS    &mmv MOVE_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
 &lt 8 TAB  &hm LS(N0) N0  &hm LS(NUMBER_1) NUMBER_1  &hm LS(N2) NUMBER_2  &hm LS(NUMBER_3) NUMBER_3  &hm PLUS EQUAL          &trans          &mkp MB4        &mkp MB5        &kp LEFT_GUI     &kp LEFT_ALT     &kp RCTRL
                                                      &kp RCTRL            &kp LEFT_GUI               &trans                  &kp RET         &mkp LCLK       &mkp RCLK
