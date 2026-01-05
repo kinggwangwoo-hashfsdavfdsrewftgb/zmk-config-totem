@@ -69,7 +69,7 @@
 
         rightq {
             bindings = <&kp LA(LC(X))>;
-            key-positions = <18 19 31>;
+            key-positions = <18 31>;
             timeout-ms = <100>;
             require-prior-idle-ms = <50>;
         };
@@ -155,14 +155,14 @@
 
         lq {
             bindings = <&kp LA(LC(Z))>;
-            key-positions = <11 20>;
+            key-positions = <11 20 12 13>;
             timeout-ms = <100>;
             require-prior-idle-ms = <50>;
         };
 
         rug {
             bindings = <&kp LA(LC(X))>;
-            key-positions = <20 13 11 12>;
+            key-positions = <20 13>;
             timeout-ms = <100>;
             require-prior-idle-ms = <50>;
         };
@@ -240,6 +240,13 @@
         rtab {
             bindings = <&kp TAB>;
             key-positions = <6 7 8 9>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <50>;
+        };
+
+        rfull {
+            bindings = <&kp LA(LC(RET))>;
+            key-positions = <11 12 13 10>;
             timeout-ms = <100>;
             require-prior-idle-ms = <50>;
         };
