@@ -283,10 +283,10 @@
 
         Media {
             bindings = <
-            &kp F14            &kp F15           &kp LA(LS(F14))  &kp LA(LS(F15))  &trans    &trans  &trans  &trans  &trans  &trans
-            &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &trans           &kp C_NEXT       &trans    &trans  &trans  &trans  &trans  &trans
-&kp C_MUTE  &trans             &kp C_PLAY_PAUSE  &kp K_PREV       &trans           &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                                 &trans           &trans           &trans    &trans  &trans  &trans
+            &kp F14            &kp F15           &kp LA(LS(F14))       &kp LA(LS(F15))          &trans    &trans  &trans  &trans  &trans  &trans
+            &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &kp LS(LA(C_VOL_DN))  &kp LA(LS(C_VOLUME_UP))  &trans    &trans  &trans  &trans  &trans  &trans
+&kp C_MUTE  &trans             &kp C_PLAY_PAUSE  &kp K_PREV            &kp C_NEXT               &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                                 &trans                &trans                   &trans    &trans  &trans  &trans
             >;
         };
 
