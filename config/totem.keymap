@@ -40,6 +40,12 @@
             timeout-ms = <100>;
         };
 
+        find {
+            bindings = <&kp LG(F)>;
+            key-positions = <14 12>;
+            timeout-ms = <100>;
+        };
+
         left_half {
             bindings = <&kp LA(LC(LEFT))>;
             key-positions = <16 17 31>;
@@ -63,7 +69,7 @@
 
         rightq {
             bindings = <&kp LA(LC(X))>;
-            key-positions = <18 31>;
+            key-positions = <18 19 31>;
             timeout-ms = <100>;
             require-prior-idle-ms = <50>;
         };
@@ -114,7 +120,7 @@
 
         raycast {
             bindings = <&kp LG(SPACE)>;
-            key-positions = <13 12>;
+            key-positions = <13 11 12>;
             timeout-ms = <100>;
             require-prior-idle-ms = <50>;
         };
@@ -149,14 +155,14 @@
 
         lq {
             bindings = <&kp LA(LC(Z))>;
-            key-positions = <11 20 12 13>;
+            key-positions = <11 20>;
             timeout-ms = <100>;
             require-prior-idle-ms = <50>;
         };
 
         rug {
             bindings = <&kp LA(LC(X))>;
-            key-positions = <20 13>;
+            key-positions = <20 13 11 12>;
             timeout-ms = <100>;
             require-prior-idle-ms = <50>;
         };
@@ -209,28 +215,6 @@
             timeout-ms = <100>;
             require-prior-idle-ms = <50>;
         };
-
-        full {
-            bindings = <&kp LA(LC(RET))>;
-            key-positions = <10 11 12 13>;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <50>;
-        };
-
-        ret {
-            bindings = <&kp RET>;
-            key-positions = <22 23 24 21>;
-        };
-
-        tap {
-            bindings = <&kp TAB>;
-            key-positions = <0 1 2 3>;
-        };
-
-        retright {
-            bindings = <&kp RET>;
-            key-positions = <27 28 29 30>;
-        };
     };
 
     keymap {
@@ -267,10 +251,10 @@
 
         Num_Mouse {
             bindings = <
-           &kp STAR       &kp N7                     &kp N8               &kp N9        &kp BACKSPACE    &msc SCRL_LEFT  &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &msc SCRL_RIGHT
-           &kp FSLH       &kp NUMBER_4               &kp N5               &kp NUMBER_6  &kp MINUS        &mmv MOVE_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
-&lt 8 TAB  &hm LS(N0) N0  &hm LS(NUMBER_1) NUMBER_1  &hm LS(N2) NUMBER_2  &kp NUMBER_3  &kp ENTER        &kp RIGHT_GUI   &mkp MB4        &mkp MB5        &none            &none            &kp LEFT_SHIFT
-                                                     &kp EQUAL            &trans        &trans           &mo 7           &mkp LCLK       &mkp RCLK
+           &kp STAR   &kp N7                     &kp N8     &kp N9        &kp BACKSPACE    &msc SCRL_LEFT  &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &msc SCRL_RIGHT
+           &kp FSLH   &kp NUMBER_4               &kp N5     &kp NUMBER_6  &kp MINUS        &mmv MOVE_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
+&lt 8 TAB  &hm N0 N0  &hm LS(NUMBER_1) NUMBER_1  &kp N2     &kp NUMBER_3  &kp GRAVE        &kp RIGHT_GUI   &mkp MB4        &mkp MB5        &none            &none            &kp LEFT_SHIFT
+                                                 &kp EQUAL  &trans        &trans           &mo 7           &mkp LCLK       &mkp RCLK
             >;
         };
 
