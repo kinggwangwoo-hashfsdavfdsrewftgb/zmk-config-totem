@@ -354,7 +354,7 @@
 
         device {
             if-layers = <1 2>;
-            then-layer = <8>;
+            then-layer = <7>;
         };
     };
 };
