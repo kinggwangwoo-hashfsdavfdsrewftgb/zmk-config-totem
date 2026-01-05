@@ -295,10 +295,10 @@
 
         td_num {
             bindings = <
-        &hm RBKT LEFT_BRACKET       &kp AMPERSAND    &kp ASTERISK  &hm RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp LG(E)    &kp BACKSPACE  &hm AMPERSAND N7          &hm ASTERISK N8       &hm LEFT_PARENTHESIS N9  &kp ASTERISK
-        &hm RIGHT_BRACE LEFT_BRACE  &kp DOLLAR       &kp PERCENT   &kp CARET                               &trans       &kp MINUS      &hm DOLLAR NUMBER_4       &hm PERCENT N5        &hm LCTRL NUMBER_6       &kp FSLH
-&trans  &trans                      &kp EXCLAMATION  &kp AT_SIGN   &kp HASH                                &kp GRAVE    &kp MINUS      &hm EXCLAMATION NUMBER_1  &hm AT_SIGN NUMBER_2  &hm HASH NUMBER_3        &hm RIGHT_PARENTHESIS N0  &trans
-                                                     &trans        &trans                                  &trans       &trans         &trans                    &kp STAR
+        &hm RBKT LEFT_BRACKET       &kp AMPERSAND    &kp ASTERISK  &hm RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp LG(E)    &kp BACKSPACE         &hm AMPERSAND N7          &hm ASTERISK N8       &hm LEFT_PARENTHESIS N9  &kp ASTERISK
+        &hm RIGHT_BRACE LEFT_BRACE  &kp DOLLAR       &kp PERCENT   &kp CARET                               &trans       &hm UNDERSCORE MINUS  &hm DOLLAR NUMBER_4       &hm PERCENT N5        &hm LCTRL NUMBER_6       &kp FSLH
+&trans  &trans                      &kp EXCLAMATION  &kp AT_SIGN   &kp HASH                                &kp GRAVE    &kp MINUS             &hm EXCLAMATION NUMBER_1  &hm AT_SIGN NUMBER_2  &hm HASH NUMBER_3        &hm RIGHT_PARENTHESIS N0  &trans
+                                                     &trans        &trans                                  &trans       &trans                &trans                    &kp STAR
             >;
         };
 
