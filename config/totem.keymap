@@ -69,7 +69,7 @@
 
         rightq {
             bindings = <&kp LA(LC(X))>;
-            key-positions = <18 31>;
+            key-positions = <18 31 16>;
             timeout-ms = <100>;
             require-prior-idle-ms = <50>;
         };
@@ -132,13 +132,6 @@
             require-prior-idle-ms = <50>;
         };
 
-        all {
-            bindings = <&kp LG(A)>;
-            key-positions = <10 1 2>;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <50>;
-        };
-
         lasttab {
             bindings = <&kp LG(LS(T))>;
             key-positions = <4 12 11>;
@@ -155,14 +148,14 @@
 
         lq {
             bindings = <&kp LA(LC(Z))>;
-            key-positions = <11 20 12 13>;
+            key-positions = <11 20 13 12>;
             timeout-ms = <100>;
             require-prior-idle-ms = <50>;
         };
 
         rug {
             bindings = <&kp LA(LC(X))>;
-            key-positions = <20 13>;
+            key-positions = <20 13 11>;
             timeout-ms = <100>;
             require-prior-idle-ms = <50>;
         };
