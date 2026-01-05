@@ -215,6 +215,34 @@
             timeout-ms = <100>;
             require-prior-idle-ms = <50>;
         };
+
+        retur {
+            bindings = <&kp ENTER>;
+            key-positions = <21 22 23 24>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <50>;
+        };
+
+        rretr {
+            bindings = <&kp ENTER>;
+            key-positions = <27 28 29 30>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <50>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <0 1 2 3>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <50>;
+        };
+
+        rtab {
+            bindings = <&kp TAB>;
+            key-positions = <6 7 8 9>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <50>;
+        };
     };
 
     keymap {
@@ -227,7 +255,7 @@
                &kp Q        &kp W       &kp E       &kp R        &kp T        &kp Y      &kp U            &kp I               &kp O       &kp P
                &hm LCTRL A  &hm LALT S  &hm LGUI D  &hm LSHFT F  &kp G        &kp H      &hm RSHFT J      &hm RGUI K          &hm RALT L  &hm RCTRL SEMI
 &lt 8 LC(F19)  &kp Z        &kp X       &kp C       &kp V        &kp B        &kp N      &kp M            &kp COMMA           &kp DOT     &kp FSLH        &kp BACKSPACE
-                                        &lt 1 ESC   &lt 2 SPACE  &lt 3 TAB    &lt 4 RET  &lt 6 BACKSPACE  &lt 7 LG(CAPSLOCK)
+                                        &lt 1 ESC   &lt 2 SPACE  &lt 3 TAB    &lt 4 RET  &lt 5 BACKSPACE  &lt 6 LG(CAPSLOCK)
             >;
         };
 
@@ -254,7 +282,7 @@
            &kp STAR   &kp N7                     &kp N8     &kp N9        &kp BACKSPACE    &msc SCRL_LEFT  &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &msc SCRL_RIGHT
            &kp FSLH   &kp NUMBER_4               &kp N5     &kp NUMBER_6  &kp MINUS        &mmv MOVE_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
 &lt 8 TAB  &hm N0 N0  &hm LS(NUMBER_1) NUMBER_1  &kp N2     &kp NUMBER_3  &kp GRAVE        &kp RIGHT_GUI   &mkp MB4        &mkp MB5        &none            &none            &kp LEFT_SHIFT
-                                                 &kp EQUAL  &trans        &trans           &mo 7           &mkp LCLK       &mkp RCLK
+                                                 &kp EQUAL  &trans        &trans           &mo 6           &mkp LCLK       &mkp RCLK
             >;
         };
 
@@ -276,15 +304,6 @@
             >;
         };
 
-        device {
-            bindings = <
-       &none       &kp F14       &kp F15       &none     &none    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-       &kp K_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP  &none    &none         &none         &none         &none         &none
-&none  &none       &none         &none         &none     &none    &none         &none         &none         &none         &none         &bt BT_CLR
-                                 &none         &none     &none    &none         &none         &none
-            >;
-        };
-
         markdown_layer {
             bindings = <
         &hm RBKT RIGHT_BRACKET      &kp AMPERSAND    &kp ASTERISK  &hm RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp LG(E)    &hm LG(LA(N5)) LG(LC(N5))  &hm LG(LA(N4)) LG(LC(N4))  &kp LG(LA(I))  &hm LG(LA(N2)) LG(LC(N2))  &hm LG(LA(N1)) LG(LC(N1))
@@ -294,10 +313,19 @@
             >;
         };
 
+        device {
+            bindings = <
+       &none       &kp F14       &kp F15       &none     &none    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+       &kp K_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP  &none    &none         &none         &none         &none         &none
+&none  &none       &none         &none         &none     &none    &none         &none         &none         &none         &none         &bt BT_CLR
+                                 &none         &none     &none    &none         &none         &none
+            >;
+        };
+
         button_8 {
             bindings = <
         &kp LG(Q)  &kp LG(W)  &kp LG(E)  &kp LG(V)  &kp LG(R)        &kp RG(RS(Z))  &kp RG(V)         &kp RG(C)         &kp RG(X)         &kp RG(Z)
-        &kp LG(A)  &kp LG(S)  &kp LCTRL  &kp LG(F)  &kp BACKSPACE    &none          &mkp LCLK         &mkp MCLK         &kp RG(L)         &kp LG(L)
+        &kp LG(A)  &kp LG(S)  &kp LCTRL  &kp LG(F)  &hm RET TAB      &none          &mkp LCLK         &mkp MCLK         &kp RG(L)         &kp LG(L)
 &trans  &kp RG(Z)  &kp RG(X)  &kp LG(C)  &kp LG(V)  &kp LG(LS(Z))    &none          &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(N5)  &kp RIGHT_SHIFT
                               &trans     &trans     &trans           &trans         &trans            &trans
             >;
@@ -309,12 +337,12 @@
 
         device {
             if-layers = <1 2>;
-            then-layer = <7>;
+            then-layer = <6>;
         };
 
         markdownlayer {
             if-layers = <3 4>;
-            then-layer = <8>;
+            then-layer = <9>;
         };
     };
 };
