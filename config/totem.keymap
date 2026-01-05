@@ -250,6 +250,16 @@
             timeout-ms = <100>;
             require-prior-idle-ms = <50>;
         };
+
+        back {
+            bindings = <&kp LG(LEFT_BRACKET)>;
+            key-positions = <0 1>;
+        };
+
+        forwarddd {
+            bindings = <&kp LG(RIGHT_BRACKET)>;
+            key-positions = <2 3>;
+        };
     };
 
     keymap {
