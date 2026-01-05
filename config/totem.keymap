@@ -286,10 +286,10 @@
 
         Num_Mouse {
             bindings = <
-           &kp STAR       &hm LS(N7) N7              &hm LS(N8) N8        &hm LS(N9) N9              &kp BACKSPACE    &msc SCRL_LEFT  &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &msc SCRL_RIGHT
-           &kp FSLH       &hm LS(NUMBER_4) NUMBER_4  &hm LS(N5) N5        &hm LS(NUMBER_6) NUMBER_6  &kp MINUS        &mmv MOVE_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
-&lt 8 TAB  &hm LS(N0) N0  &hm LS(NUMBER_1) NUMBER_1  &hm LS(N2) NUMBER_2  &hm LS(NUMBER_3) NUMBER_3  &kp GRAVE        &kp RIGHT_GUI   &mkp MB4        &mkp MB5        &none            &none            &kp LEFT_SHIFT
-                                                     &kp EQUAL            &trans                     &trans           &mo 6           &mkp LCLK       &mkp RCLK
+           &kp STAR       &hm LS(N7) N7              &hm LS(N8) N8        &hm LS(N9) N9              &kp BACKSPACE           &msc SCRL_LEFT  &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &msc SCRL_RIGHT
+           &kp FSLH       &hm LS(NUMBER_4) NUMBER_4  &hm LS(N5) N5        &hm LS(NUMBER_6) NUMBER_6  &hm UNDERSCORE MINUS    &mmv MOVE_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
+&lt 8 TAB  &hm LS(N0) N0  &hm LS(NUMBER_1) NUMBER_1  &hm LS(N2) NUMBER_2  &hm LS(NUMBER_3) NUMBER_3  &hm TILDE GRAVE         &kp RIGHT_GUI   &mkp MB4        &mkp MB5        &none            &none            &kp LEFT_SHIFT
+                                                     &kp EQUAL            &trans                     &trans                  &mo 6           &mkp LCLK       &mkp RCLK
             >;
         };
 
