@@ -40,12 +40,6 @@
             timeout-ms = <100>;
         };
 
-        find {
-            bindings = <&kp LG(F)>;
-            key-positions = <14 12>;
-            timeout-ms = <100>;
-        };
-
         left_half {
             bindings = <&kp LA(LC(LEFT))>;
             key-positions = <16 17 31>;
@@ -97,7 +91,7 @@
 
         magnify {
             bindings = <&kp LG(PLUS)>;
-            key-positions = <20 2>;
+            key-positions = <20 3>;
             timeout-ms = <100>;
             require-prior-idle-ms = <50>;
             slow-release;
@@ -105,7 +99,7 @@
 
         micro {
             bindings = <&kp LG(MINUS)>;
-            key-positions = <20 3>;
+            key-positions = <20 2>;
             timeout-ms = <100>;
             require-prior-idle-ms = <50>;
             slow-release;
@@ -128,20 +122,6 @@
         finder {
             bindings = <&kp LA(LG(SPACE))>;
             key-positions = <12 13 23 24>;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <50>;
-        };
-
-        all {
-            bindings = <&kp LG(A)>;
-            key-positions = <10 1 2>;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <50>;
-        };
-
-        lasttab {
-            bindings = <&kp LG(LS(T))>;
-            key-positions = <4 12 11>;
             timeout-ms = <100>;
             require-prior-idle-ms = <50>;
         };
