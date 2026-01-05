@@ -278,10 +278,10 @@
 
         Media {
             bindings = <
-       &none     &none     &none      &none      &none     &none       &kp F14       &kp F15       &none       &none
-       &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none     &kp C_PREV  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT  &none
-&none  &none     &none     &none      &none      &none     &none       &kp C_STOP    &kp C_PLAY    &kp C_MUTE  &none  &none
-                           &trans     &trans     &trans    &kp C_STOP  &kp C_PLAY    &kp C_MUTE
+     &kp F14     &kp F15            &kp F3           &kp         &kp       &kp         &kp F14       &kp F15       &kp         &kp
+     &kp K_MUTE  &kp K_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT  &kp       &kp C_PREV  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT  &kp
+&kp  &kp         &kp K_PLAY_PAUSE   &kp K_PREV       &kp         &kp       &kp         &kp C_STOP    &kp C_PLAY    &kp C_MUTE  &kp  &kp
+                                    &trans           &trans      &trans    &kp C_STOP  &kp C_PLAY    &kp C_MUTE
             >;
         };
 
