@@ -256,7 +256,7 @@
             bindings = <
                &kp Q        &kp W       &kp E       &kp R        &kp T        &kp Y      &kp U            &kp I         &kp O       &kp P
                &hm LCTRL A  &hm LALT S  &hm LGUI D  &hm LSHFT F  &kp G        &kp H      &hm RSHFT J      &hm RGUI K    &hm RALT L  &hm RCTRL SEMI
-&kp LC(SPACE)  &kp Z        &kp X       &kp C       &kp V        &kp B        &kp N      &kp M            &kp COMMA     &kp DOT     &kp FSLH        &hm SINGLE_QUOTE DOUBLE_QUOTES
+&kp LC(SPACE)  &kp Z        &kp X       &kp C       &kp V        &kp B        &kp N      &kp M            &kp COMMA     &kp DOT     &kp FSLH        &hm APOSTROPHE LS(APOSTROPHE)
                                         &lt 1 ESC   &lt 2 SPACE  &lt 3 TAB    &lt 4 RET  &lt 5 BACKSPACE  &lt 6 DELETE
             >;
         };
