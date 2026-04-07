@@ -256,7 +256,7 @@
             bindings = <
                &kp Q        &kp W       &kp E       &kp R        &kp T        &kp Y      &kp U            &kp I         &kp O       &kp P
                &hm LCTRL A  &hm LALT S  &hm LGUI D  &hm LSHFT F  &kp G        &kp H      &hm RSHFT J      &hm RGUI K    &hm RALT L  &hm RCTRL SEMI
-&kp LC(SPACE)  &kp Z        &kp X       &kp C       &kp V        &kp B        &kp N      &kp M            &kp COMMA     &kp DOT     &kp FSLH        &hm DOUBLE_QUOTES SINGLE_QUOTE
+&kp LC(SPACE)  &kp Z        &kp X       &kp C       &kp V        &kp B        &kp N      &kp M            &kp COMMA     &kp DOT     &kp FSLH        &hm SINGLE_QUOTE DOUBLE_QUOTES
                                         &lt 1 ESC   &lt 2 SPACE  &lt 3 TAB    &lt 4 RET  &lt 5 BACKSPACE  &lt 6 DELETE
             >;
         };
@@ -281,7 +281,7 @@
 
         Num_Mouse {
             bindings = <
-            &kp STAR       &hm LS(N7) N7              &hm LS(N8) N8        &hm LS(N9) N9              &kp TILDE               &msc SCRL_LEFT  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &msc SCRL_RIGHT
+            &kp STAR       &hm LS(N7) N7              &hm LS(N8) N8        &hm LS(N9) N9              &hm GRAVE LS(GRAVE)     &msc SCRL_LEFT  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &msc SCRL_RIGHT
             &kp FSLH       &hm LS(NUMBER_4) NUMBER_4  &hm LS(N5) N5        &hm LS(NUMBER_6) NUMBER_6  &hm UNDERSCORE MINUS    &mmv MOVE_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
 &kp PERIOD  &hm LS(N0) N0  &hm LS(NUMBER_1) NUMBER_1  &hm LS(N2) NUMBER_2  &hm LS(NUMBER_3) NUMBER_3  &hm PLUS EQUAL          &mkp MB4        &mkp MB5        &kp RGUI        &kp RALT         &kp RCTRL        &trans
                                                       &kp RCTRL            &kp LEFT_GUI               &trans                  &kp RET         &mkp LCLK       &mkp RCLK
