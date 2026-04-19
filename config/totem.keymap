@@ -272,10 +272,10 @@
 
         nav_num {
             bindings = <
-                &kp LA(BSPC)  &kp BSPC      &kp UP       &kp DEL        &kp LA(DEL)      &kp BACKSPACE  &hm LS(N7) N7             &hm LS(N8) N8         &hm LS(N9) N9                  &kp STAR
-                &kp LA(LEFT)  &kp LEFT      &kp DOWN     &kp RIGHT      &kp LA(RIGHT)    &kp MINUS      &hm DOLLAR NUMBER_4       &hm PERCENT N5        &hm LEFT_PARENTHESIS NUMBER_6  &kp FSLH
-&kp LEFT_SHIFT  &kp LG(UP)    &kp LG(LEFT)  &hm TAB RET  &kp LG(RIGHT)  &kp LG(DOWN)     &kp DOT        &hm EXCLAMATION NUMBER_1  &hm AT_SIGN NUMBER_2  &hm HASH NUMBER_3              &hm LS(N0) N0  &lt 8 TAB
-                                            &trans       &trans         &trans           &kp ENTER      &kp BSPC                  &kp DEL
+                &hm LA(BSPC) LG(BACKSPACE)  &kp BSPC      &kp UP       &kp DEL        &kp LA(DEL)      &kp SPACE  &hm LS(N7) N7             &hm LS(N8) N8         &hm LS(N9) N9                  &kp STAR
+                &kp LA(LEFT)                &kp LEFT      &kp DOWN     &kp RIGHT      &kp LA(RIGHT)    &kp MINUS  &hm DOLLAR NUMBER_4       &hm PERCENT N5        &hm LEFT_PARENTHESIS NUMBER_6  &kp FSLH
+&kp LEFT_SHIFT  &kp LG(UP)                  &kp LG(LEFT)  &hm TAB RET  &kp LG(RIGHT)  &kp LG(DOWN)     &kp DOT    &hm EXCLAMATION NUMBER_1  &hm AT_SIGN NUMBER_2  &hm HASH NUMBER_3              &hm LS(N0) N0  &lt 8 PERIOD
+                                                          &trans       &trans         &trans           &trans     &trans                    &trans
             >;
         };
 
@@ -327,7 +327,7 @@
         button_8 {
             bindings = <
         &kp LG(Q)  &kp LG(W)  &kp LG(E)  &kp LG(V)  &kp LG(R)        &kp RG(RS(Z))  &kp RG(V)         &kp RG(C)         &kp RG(X)         &kp RG(Z)
-        &kp LG(A)  &kp LG(S)  &kp LCTRL  &kp LG(F)  &hm RET TAB      &none          &mkp LCLK         &mkp MCLK         &kp RG(L)         &kp LG(L)
+        &kp LG(A)  &kp LG(S)  &kp LG(D)  &kp LG(F)  &hm RET TAB      &none          &mkp LCLK         &mkp MCLK         &kp RG(L)         &kp LG(L)
 &trans  &kp RG(Z)  &kp RG(X)  &kp LG(C)  &kp LG(V)  &kp LG(LS(Z))    &none          &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(N5)  &kp RIGHT_SHIFT
                               &trans     &trans     &trans           &trans         &trans            &trans
             >;
@@ -340,6 +340,11 @@
         device {
             if-layers = <1 2>;
             then-layer = <7>;
+        };
+
+        hotsowop {
+            if-layers = <2 5>;
+            then-layer = <0>;
         };
     };
 };
