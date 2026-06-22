@@ -247,23 +247,23 @@
         };
     };
 
-        macros {
+    macros {
         /* ds: 클릭 → (포커스 대기) → 탭전환(Cmd+Tab) → 붙여넣기(Cmd+V) → Tab → Enter */
+
         ds: ds {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <80>;
             tap-ms = <30>;
-            bindings
-                = <&mkp LCLK>
-                , <&macro_wait_time 150>
-                , <&kp LG(TAB)>
-                , <&macro_wait_time 80>
-                , <&kp LG(V)>
-                , <&kp TAB>
-                , <&kp ENTER>;
+            bindings =
+                <&mkp MB1>,
+                <&macro_wait_time 150>,
+                <&kp LG(TAB)>,
+                <&macro_wait_time 80>,
+                <&kp LG(V) &kp TAB &kp ENTER>;
         };
     };
+
     keymap {
         compatible = "zmk,keymap";
 
