@@ -247,6 +247,22 @@
         };
     };
 
+    macros {
+        ds: ds {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LG(TAB)>,
+                <&macro_wait_time 1>,
+                <&mkp MB1>,
+                <&macro_press>,
+                <&kp LG(V)>,
+                <&macro_press>;
+
+            label = "DS";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -263,10 +279,10 @@
 
         Media {
             bindings = <
-            &kp F14            &kp F15           &kp LA(LS(F14))       &kp LA(LS(F15))          &trans    &trans  &trans  &trans  &trans  &trans
-            &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &kp LS(LA(C_VOL_DN))  &kp LA(LS(C_VOLUME_UP))  &trans    &trans  &trans  &trans  &trans  &trans
-&kp C_MUTE  &kp C_PREVIOUS     &kp C_PLAY_PAUSE  &kp C_NEXT            &trans                   &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                                 &trans                &trans                   &trans    &trans  &trans  &trans
+            &kp F14            &kp F15           &kp LA(LS(F14))       &kp LA(LS(F15))          &trans              &trans  &trans  &trans  &trans  &trans
+            &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &kp LS(LA(C_VOL_DN))  &kp LA(LS(C_VOLUME_UP))  &trans              &trans  &trans  &trans  &trans  &trans
+&kp C_MUTE  &kp C_PREVIOUS     &kp C_PLAY_PAUSE  &kp C_NEXT            &kp LC(N5)               &kp LC(NUMBER_6)    &trans  &trans  &trans  &trans  &trans  &trans
+                                                 &trans                &trans                   &trans              &trans  &trans  &trans
             >;
         };
 
