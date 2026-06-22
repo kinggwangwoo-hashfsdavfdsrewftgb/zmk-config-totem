@@ -262,6 +262,19 @@
                 <&macro_wait_time 80>,
                 <&kp LG(V) &kp TAB &kp ENTER>;
         };
+
+        ts: ts {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <80>;
+            tap-ms = <30>;
+            bindings =
+                <&kp LG(TAB)>,
+                <&macro_wait_time 80>,
+                <&kp LG(V) &kp TAB &kp ENTER>;
+
+            label = "TS";
+        };
     };
 
     keymap {
@@ -289,7 +302,7 @@
 
         nav_num {
             bindings = <
-                &hm LA(BSPC) LG(BACKSPACE)  &kp BSPC      &kp UP       &kp DEL        &kp LA(DEL)      &kp SPACE  &hm LS(N7) N7             &hm LS(N8) N8         &hm LS(N9) N9                  &kp STAR
+                &hm LG(BSPC) LA(BACKSPACE)  &kp BSPC      &kp UP       &kp DEL        &kp LA(DEL)      &kp SPACE  &hm LS(N7) N7             &hm LS(N8) N8         &hm LS(N9) N9                  &kp STAR
                 &kp LA(LEFT)                &kp LEFT      &kp DOWN     &kp RIGHT      &kp LA(RIGHT)    &kp MINUS  &hm DOLLAR NUMBER_4       &hm PERCENT N5        &hm LEFT_PARENTHESIS NUMBER_6  &kp FSLH
 &kp LEFT_SHIFT  &kp LG(UP)                  &kp LG(LEFT)  &hm TAB RET  &kp LG(RIGHT)  &kp LG(DOWN)     &kp DOT    &hm EXCLAMATION NUMBER_1  &hm AT_SIGN NUMBER_2  &hm HASH NUMBER_3              &hm LS(N0) N0  &lt 8 PERIOD
                                                           &trans       &trans         &trans           &trans     &trans                    &trans
