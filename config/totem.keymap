@@ -258,9 +258,9 @@
             tap-ms = <30>;
             bindings =
                 <&mkp MB1>,
-                <&macro_wait_time 450>,
+                <&macro_wait_time 300>,
                 <&kp LG(TAB)>,
-                <&macro_wait_time 80>,
+                <&macro_wait_time 10>,
                 <&kp LG(V) &kp TAB &kp ENTER>;
         };
 
@@ -271,10 +271,36 @@
             tap-ms = <30>;
             bindings =
                 <&kp LG(TAB)>,
-                <&macro_wait_time 80>,
+                <&macro_wait_time 10>,
                 <&kp LG(V) &kp TAB &kp ENTER>;
 
             label = "TS";
+        };
+
+        semiauto: semiauto {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <80>;
+            tap-ms = <30>;
+            bindings =
+                <&kp LG(TAB)>,
+                <&macro_wait_time 10>,
+                <&kp LG(V) &kp TAB>;
+
+            label = "SEMIAUTO";
+        };
+
+        sssc: sssc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <80>;
+            tap-ms = <30>;
+            bindings =
+                <&kp LS(TAB)>,
+                <&macro_wait_time 10>,
+                <&kp LG(V) &kp TAB>;
+
+            label = "SSSC";
         };
     };
 
