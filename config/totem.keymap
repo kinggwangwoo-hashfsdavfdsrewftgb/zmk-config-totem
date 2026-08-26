@@ -258,7 +258,7 @@
             tap-ms = <30>;
             bindings =
                 <&mkp MB1>,
-                <&macro_wait_time 300>,
+                <&macro_wait_time 500>,
                 <&kp LG(TAB)>,
                 <&macro_wait_time 10>,
                 <&kp LG(V) &kp TAB &kp ENTER>;
@@ -383,10 +383,10 @@
 
         button_8 {
             bindings = <
-        &kp LG(Q)  &kp LG(W)  &kp LG(E)  &kp LG(V)  &kp LG(R)        &kp RG(RS(Z))  &kp RG(V)         &kp RG(C)         &kp RG(X)         &kp RG(Z)
-        &kp LG(A)  &kp LG(S)  &kp LG(D)  &kp LG(F)  &hm RET TAB      &none          &mkp LCLK         &mkp MCLK         &kp RG(L)         &kp LG(L)
-&trans  &kp RG(Z)  &kp RG(X)  &kp LG(C)  &kp LG(V)  &kp LG(LS(Z))    &none          &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(N5)  &kp RIGHT_SHIFT
-                              &trans     &trans     &trans           &trans         &trans            &trans
+        &kp LG(Q)           &kp LG(W)                 &kp LG(E)           &kp LG(V)                 &ts              &kp RG(RS(Z))  &kp RG(V)         &kp RG(C)         &kp RG(X)         &kp RG(Z)
+        &kp LG(A)           &kp LG(LA(LS(NUMBER_4)))  &kp LG(LA(LS(N5)))  &kp LG(LA(LS(N0)))        &ds              &none          &mkp LCLK         &mkp MCLK         &kp RG(L)         &kp LG(L)
+&trans  &kp LS(LA(LG(N0)))  &kp RG(RA(RS(NUMBER_1)))  &kp LG(LA(LS(C)))   &kp LG(LA(LS(NUMBER_3)))  &kp LG(LS(Z))    &none          &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(N5)  &kp RIGHT_SHIFT
+                                                      &trans              &trans                    &trans           &trans         &trans            &trans
             >;
         };
     };
