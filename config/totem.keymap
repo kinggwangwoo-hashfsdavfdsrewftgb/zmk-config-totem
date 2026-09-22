@@ -256,12 +256,7 @@
             #binding-cells = <0>;
             wait-ms = <80>;
             tap-ms = <30>;
-            bindings =
-                <&mkp MB1>,
-                <&macro_wait_time 500>,
-                <&kp LG(TAB)>,
-                <&macro_wait_time 10>,
-                <&kp LG(V) &kp TAB &kp ENTER>;
+            bindings = <&kp F18>;
         };
 
         ts: ts {
