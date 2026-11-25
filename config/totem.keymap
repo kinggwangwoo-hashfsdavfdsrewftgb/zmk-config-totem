@@ -383,7 +383,7 @@
 
         button_8 {
             bindings = <
-                          &kp Q                     &kp W                     &kp TAB                   &kp RET                   &ts          &kp RG(RS(Z))  &kp LS(LA(LG(P)))  &kp LS(LA(LG(S)))  &kp LS(LA(LG(R)))  &kp LS(LA(LG(E)))
+                          &kp Q                     &kp W                     &kp TAB                   &kp RET                   &kp F18      &kp RG(RS(Z))  &kp LS(LA(LG(P)))  &kp LS(LA(LG(S)))  &kp LS(LA(LG(R)))  &kp LS(LA(LG(E)))
                           &kp LG(LS(LA(NUMBER_5)))  &kp LG(LA(LS(NUMBER_6)))  &kp LG(LA(LS(NUMBER_7)))  &kp LG(LA(LS(N8)))        &ds          &none          &mkp LCLK          &mkp MCLK          &kp RG(L)          &kp LG(L)
 &kp LS(LA(LG(NUMBER_0)))  &kp LS(LA(LG(NUMBER_1)))  &kp RG(RA(RS(NUMBER_2)))  &kp LG(LA(LS(NUMBER_3)))  &kp LG(LA(LS(NUMBER_4)))  &kp LG(V)    &none          &kp LG(NUMBER_1)   &kp LG(NUMBER_2)   &kp LG(NUMBER_3)   &kp LG(N5)         &kp RIGHT_SHIFT
                                                                               &trans                    &trans                    &trans       &trans         &trans             &trans
